@@ -14,7 +14,7 @@ public class Controleur
     {
         this.metier = new Metier(this); 
         this.ihm    = new FrameCasino (this);
-        this.lireDonnees();
+        this.lireDonnees(); //recupere les donnees des parties precedentes
     }
 
     public int getBanque()
@@ -72,8 +72,8 @@ public class Controleur
                 {
                     PrintWriter pw = new PrintWriter( new FileOutputStream("./sauvegarde.txt"));
 
-                    pw.println( String.valueOf(this.getBanque()) );
-                    pw.println( String.valueOf(this.ihm.getCptPret()));
+                    pw.println( String.valueOf(this.getBanque()) );     //sauvegarde le nombre de jetons du joueur dans le fichier 
+                    pw.println( String.valueOf(this.ihm.getCptPret())); //sauvegarde le nombre de pret disponible du jouer dans le fichier
                     pw.close();
                 }
                 catch (Exception a){ a.printStackTrace(); }
@@ -87,8 +87,8 @@ public class Controleur
                 {
                     PrintWriter pw = new PrintWriter( new FileOutputStream("./sauvegarde.txt"));
 
-                    pw.println( String.valueOf(20) );
-                    pw.println( String.valueOf(10));
+                    pw.println( String.valueOf(20) );   //reinitialise le nombre de jeton a 20
+                    pw.println( String.valueOf(10));    //reinitialise le nombre de pret disponible a 10
                     pw.close();
                 }
                 catch (Exception a){ a.printStackTrace(); }
@@ -104,8 +104,8 @@ public class Controleur
         try(FileInputStream fis = new FileInputStream(file)) 
         {
             Scanner sc = new Scanner(fis);
-            this.metier.setDonneeBanque(Integer.parseInt(sc.nextLine()));
-            this.ihm.setCptPret(Integer.parseInt(sc.nextLine()));
+            this.metier.setDonneeBanque(Integer.parseInt(sc.nextLine()));   //recupere le nombre de jeton dans la banque
+            this.ihm.setCptPret(Integer.parseInt(sc.nextLine()));   //recupere le nombre de pret disponible
             sc.close();
         } 
         catch(IOException e) { e.printStackTrace(); }

@@ -52,7 +52,7 @@ public class PanelCasino extends JPanel
         }
         else 
         {
-            Icon icon = new ImageIcon("images\\" + Integer.parseInt(mess)  + ".png");
+            Icon icon = new ImageIcon("../images\\" + Integer.parseInt(mess)  + ".png");    //affichage des des adverses selon le score obtenue
             this.lblDesAdverses.setIcon(icon);
         }
     }
@@ -70,7 +70,7 @@ public class PanelCasino extends JPanel
         }
         else 
         {
-            Icon icon = new ImageIcon("images\\" + Integer.parseInt(mess)  + ".png");
+            Icon icon = new ImageIcon("../images\\" + Integer.parseInt(mess)  + ".png");    //affichage des des du joueur selon le score obtenue
             this.lblDesJoueur.setIcon(icon);
         }    
     }
