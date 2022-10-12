@@ -6,9 +6,9 @@ Contexte :
 	Il n'y a pas toutes les possibilités de score (ici un 7 a autant de chance de tomber qu'un 12), j'ai fait ce choix par facilité, je dois l'avouer, mais également pour avoir moins de chance d'égalité. 
 
 Lancer l'applciation : 
-	Faites un pull afin de récupérer les fichiers sur votre machine local
-	Placer vous via votre terminal dans le dossier "casino"
-	Executer la commande "javac "@compile.list"
-	Accéder au dossier "exe" --> cd exe
-	Lancer le controleur --> java controleur
+	Faites un pull afin de récupérer les fichiers sur votre machine local.
+	Placer vous via votre terminal dans le dossier "casino".
+	Executer la commande "javac "@compile.list".
+	Accéder au dossier "exe" --> cd exe.
+	Lancer le controleur --> java controleur.
 	Jouer à ce magnifique jeu autant que vous le voulez !
