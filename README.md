@@ -5,7 +5,7 @@
 	J'ai décidé de créer un système de sauvegarde via un fichier txt afin que le joueur puisse continuer sa partie avec son nombre de jetons gagnés précédemment même après une coupure de l'application.
 	Il n'y a pas toutes les possibilités de score (ici un 7 a autant de chance de tomber qu'un 12), j'ai fait ce choix par facilité, je dois l'avouer, mais également pour avoir moins de chance d'égalité. 
 
-Lancer l'applciation : 
+### Lancer l'applciation : 
 	Faites un pull afin de récupérer les fichiers sur votre machine local.
 	Placer vous via votre terminal dans le dossier "casino".
 	Executer la commande "javac "@compile.list".
